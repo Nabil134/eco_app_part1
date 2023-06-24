@@ -40,6 +40,8 @@ dependencies:
   firebase_core: ^2.14.0
   carousel_slider: ^4.2.1
   sizer: ^2.0.15
+  cloud_firestore: ^4.8.1
+  flutter_admin_scaffold: ^1.2.0
 
 dev_dependencies:
   flutter_test:

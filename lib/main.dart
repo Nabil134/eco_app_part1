@@ -2,6 +2,11 @@ import 'package:ecco_app/firebase_options.dart';
 import 'package:ecco_app/screens/auth_screens/login_screen.dart';
 import 'package:ecco_app/screens/landing_screen.dart';
 import 'package:ecco_app/screens/loyout_screen.dart';
+import 'package:ecco_app/screens/web_side/addProducts_Screen.dart';
+import 'package:ecco_app/screens/web_side/dashboard_screen.dart';
+import 'package:ecco_app/screens/web_side/deleteProducts_Screen.dart';
+import 'package:ecco_app/screens/web_side/updateProducts_Screen.dart';
+import 'package:ecco_app/screens/web_side/web_main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:sizer/sizer.dart';
@@ -29,6 +34,13 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.white,
         ),
         home: LayoutScreen(),
+        routes: {
+          WebMainScreen.id: (context) => WebMainScreen(),
+          DashboardScreen.id: (context) => DashboardScreen(),
+          AddProductScreen.id: (context) => AddProductScreen(),
+          UpdateProductScreen.id: (context) => UpdateProductScreen(),
+          DeleteProductScreen.id: (context) => DeleteProductScreen(),
+        },
       ),
     );
   }
